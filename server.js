@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var article={
-'article-one':{
+    'article-one': {
   title:'Article one I suman kumar',
   heading:'Article one',
   date:'march 16,2018',
@@ -25,7 +25,7 @@ var article={
                     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
    </p>`
     },
-'article-two':{
+    'article-two': {
   title:'Article two I suman kumar',
   heading:'Article second',
   date:'march 16,2018',
@@ -34,7 +34,7 @@ var article={
                     This is the content for my second article..
     </p>`
  },
-'article-three':{ 
+    'article-three': { 
   title:'Article three I suman kumar',
   heading:'Article third',
   date:'march 16,2018',
@@ -81,6 +81,7 @@ function createTemplate (data) {
   `;
   return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
