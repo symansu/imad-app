@@ -84,11 +84,11 @@ function createTemplate (data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/articlename',  function(req,  res){
-    //articlename==article-one
-    //article[articlename]=={}content object for article one
-    var articlename=req.params.articlename;
-  res.send(createTemplate(articles[articlename]));
+app.get('/articleName',  function(req,  res){
+    //articleName==article-one
+    //article[articleName]=={}content object for article one
+    var articlename=req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
