@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 var articleOne={
   title:'Article one I suman kumar',
   heading:'Article one',
-  date:'march 15,2018',
+  date:'march 16,2018',
   content:   
    `<p>
                     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
@@ -25,7 +25,7 @@ var articleOne={
    </p>`
     
 };
-function creatTemplate (data) {
+function createTemplate (data) {
   var title=data.title;
   var heading=data.heading;
   var date=data.date;
