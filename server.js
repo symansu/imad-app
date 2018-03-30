@@ -6,11 +6,12 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content ={
-    title: 'Article one i suman kumar',
-    heading: 'Article one',
-    date: 'March 29 2018',
-    content:
+var articles = {
+     'article-one': {
+     title: 'Article one i suman kumar',
+     heading: 'Article one',
+     date: 'March 29 2018',
+     content:
              `<p>
                     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                 </p>
@@ -23,6 +24,25 @@ var content ={
                 <p>
                     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                  </p>`
+},
+     'article-two': {
+          title: 'Article two i suman kumar',
+          heading: 'Article two',
+          date: 'March 29 2018',
+           content:
+             `<p>
+                    This is the content for my second article.This is the content for my second article.
+                </p>`
+ },
+     'article-three': {
+          title: 'Article three i suman kumar',
+          heading: 'Article three',
+          date: 'March 29 2018',
+           content:
+             `<p>
+                    This is the content for my third article.This is the content for my third article.
+                </p>`
+    }
 };
 
 function createTemplate (data) {
