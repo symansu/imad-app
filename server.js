@@ -25,7 +25,7 @@ var article={
                     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
    </p>`
     },
-    'article-two': {
+    'article-two':{
   title:'Article two I suman kumar',
   heading:'Article second',
   date:'march 16,2018',
